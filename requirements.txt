@@ -1,6 +1,6 @@
 anyio==3.5.0; python_version >= "3.7" and python_full_version >= "3.6.2"
 asgiref==3.5.0; python_version >= "3.7"
-click==8.0.4; python_version >= "3.7"
+click==8.1.2; python_version >= "3.7"
 colorama==0.4.4; python_version >= "3.7" and python_full_version < "3.0.0" and sys_platform == "win32" and platform_system == "Windows" or sys_platform == "win32" and python_version >= "3.7" and python_full_version >= "3.5.0" and platform_system == "Windows"
 fastapi==0.75.0; python_full_version >= "3.6.1"
 h11==0.13.0; python_version >= "3.7"
