@@ -18,5 +18,5 @@ typing-extensions==4.1.1; python_version < "3.8" and python_version >= "3.7" and
 uvicorn==0.17.6; python_version >= "3.7"
 uvloop==0.16.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" and python_version >= "3.7"
 watchgod==0.8.2; python_version >= "3.7"
-websockets==10.2; python_version >= "3.7"
+websockets==10.3; python_version >= "3.7"
 zipp==3.7.0; python_version < "3.8" and python_version >= "3.7"
