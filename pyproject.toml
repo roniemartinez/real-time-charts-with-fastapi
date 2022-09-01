@@ -13,7 +13,7 @@ uvicorn = {extras = ["standard"], version = "^0.18.2"}
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.5"
-black = "^22.6.0"
+black = "^22.8.0"
 isort = "^5.10.1"
 mypy = "^0.971"
 pyproject-flake8 = "^0.0.1a4"
