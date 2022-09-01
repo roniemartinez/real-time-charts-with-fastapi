@@ -1,3 +1,4 @@
+import asyncio
 import json
 import logging
 import random
@@ -5,10 +6,9 @@ import sys
 from datetime import datetime
 from typing import Iterator
 
-import asyncio
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.requests import Request
+from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.templating import Jinja2Templates
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
