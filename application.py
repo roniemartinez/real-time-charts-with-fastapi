@@ -10,6 +10,7 @@ from fastapi import FastAPI
 from fastapi.requests import Request
 from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.templating import Jinja2Templates
+from starlette.responses import Response
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -20,7 +21,7 @@ random.seed()  # Initialize the random number generator
 
 
 @application.get("/", response_class=HTMLResponse)
-async def index(request: Request) -> templates.TemplateResponse:
+async def index(request: Request) -> Response:
     return templates.TemplateResponse("index.html", {"request": request})
 
 
