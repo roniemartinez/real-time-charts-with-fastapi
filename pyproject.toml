@@ -15,7 +15,7 @@ uvicorn = { extras = ["standard"], version = "^0.20.0" }
 autoflake = "^1.7"
 black = "^23.1.0"
 isort = "^5.11.5"
-mypy = "^0.991"
+mypy = "^1.0"
 pyproject-flake8 = "^5.0.4"
 
 [tool.isort]
