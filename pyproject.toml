@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.7"
 fastapi = "^0.94.1"
 Jinja2 = "^3.1.2"
-uvicorn = { extras = ["standard"], version = "^0.21.0" }
+uvicorn = { extras = ["standard"], version = "^0.21.1" }
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.7"
