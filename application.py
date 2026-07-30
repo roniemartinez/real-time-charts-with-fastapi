@@ -4,7 +4,7 @@ import logging
 import random
 import sys
 from datetime import datetime
-from typing import Iterator
+from typing import AsyncIterator
 
 from fastapi import FastAPI
 from fastapi.requests import Request
@@ -22,16 +22,16 @@ random.seed()  # Initialize the random number generator
 
 @application.get("/", response_class=HTMLResponse)
 async def index(request: Request) -> Response:
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html")
 
 
-async def generate_random_data(request: Request) -> Iterator[str]:
+async def generate_random_data(request: Request) -> AsyncIterator[str]:
     """
     Generates random value between 0 and 100
 
     :return: String containing current timestamp (YYYY-mm-dd HH:MM:SS) and randomly generated data.
     """
-    client_ip = request.client.host
+    client_ip = request.client.host if request.client else ""
 
     logger.info("Client %s connected", client_ip)
 
